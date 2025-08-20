@@ -3,3 +3,14 @@ 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
 
 md@comptech.com.bd
 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
+
+
+
+hugging face
+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
+
+docker run --runtime=nvidia --gpus all -it --rm \
+  -e NGC_API_KEY=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 \
+  -e HF_TOKEN=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 \
+  -p 9000:8000 \
+  nvcr.io/nim/stabilityai/stable-diffusion-3.5-large:1.0.0
